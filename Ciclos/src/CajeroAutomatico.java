@@ -6,7 +6,7 @@ public class CajeroAutomatico {
         var consola = new Scanner(System.in);
         double dinero = 1000;
         var salir =  false;
-        double retiroDeposito = 0;
+        double retiroDeposito;
 
         do{
             System.out.print("""

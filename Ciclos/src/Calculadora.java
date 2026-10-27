@@ -5,7 +5,7 @@ public class Calculadora {
         System.out.println("*** Calculadora ***");
         var consola = new Scanner(System.in);
         var salir = false;
-        double numero1 = 0, numero2 = 0, resultado = 0;
+        double numero1 = 0, numero2 = 0, resultado;
 
         while(!salir){
             System.out.printf("""

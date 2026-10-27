@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CajeroAutomático {
+public class CajeroAutomatico {
     public static void main(String[] args) {
         System.out.println("*** Cajero Automático ***");
         var consola = new Scanner(System.in);
@@ -22,16 +22,22 @@ public class CajeroAutomático {
             switch (opcion){
                 case 1 -> System.out.printf("Tu saldo: $%.0f",dinero);
                 case 2 -> {
-                    System.out.println("Ingrese la cantidad a retirar: ");
+                    System.out.print("Ingrese la cantidad a retirar: ");
                     retiroDeposito = Double.parseDouble(consola.next());
-                    dinero = dinero - retiroDeposito;
-                    System.out.println("Saldo actual: " + dinero);
+                    if (retiroDeposito <= dinero){
+                        //dinero = dinero - retiroDeposito;
+                        dinero -= retiroDeposito;
+                        System.out.println("Saldo actual: $" + dinero);
+                    }else {
+                        System.out.println("Fondos insuficientes");
+                    }
                 }
                 case 3 -> {
-                    System.out.println("Ingrese la cantidad a depositar: ");
+                    System.out.print("Ingrese la cantidad a depositar: ");
                     retiroDeposito = Double.parseDouble(consola.next());
-                    dinero = dinero + retiroDeposito;
-                    System.out.println("Saldo actual: " + dinero);
+                    //dinero = dinero + retiroDeposito;
+                    dinero += retiroDeposito;
+                    System.out.println("Saldo actual: $" + dinero);
                 }
                 case 4 -> {
                     salir = true;

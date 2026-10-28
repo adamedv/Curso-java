@@ -7,7 +7,7 @@ public class FuncionEsPar {
 //            return true;
 //        }
 //        return false;
-        return (numero%2==0)? true : false;
+        return numero%2==0;
     }
 
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class FuncionEsPar {
         System.out.print("Ingresa un número: ");
         var numero = Integer.parseInt(consola.nextLine());
         var resutado = esPar(numero);
-        if (resutado==true){
+        if (resutado){
             System.out.print("Es par");
         }else{
             System.out.print("No es par");

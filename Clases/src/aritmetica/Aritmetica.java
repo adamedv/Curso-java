@@ -1,6 +1,7 @@
 package aritmetica;
 
 public class Aritmetica {
+    //Atributos
     private double operando1; //Deben ser encapsulados
     private double operando2;
 
@@ -15,18 +16,19 @@ public class Aritmetica {
         operando2 = op2;
     }
 
+    //Metodo
     public double suma() {
         return operando1 + operando2;
     }
-
+    //Metodo
     public double resta() {
         return operando1 - operando2;
     }
-
+    //Metodo
     public double multiplicacion() {
         return operando1 * operando2;
     }
-
+    //Metodo
     public double division() {
         if (operando2 == 0) {
             return Double.NaN;
@@ -34,11 +36,11 @@ public class Aritmetica {
             return operando1 / operando2;
         }
     }
-
+    //Metodo
     public double getOperando1() {
         return this.operando1;
     }
-
+    //Metodo
     public double setOperando1(double operando1) {
         return this.operando1 = operando1;
     }

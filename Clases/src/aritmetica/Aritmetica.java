@@ -15,7 +15,7 @@ public class Aritmetica {
         operando2 = op2;
     }
 
-     public double suma() {
+    public double suma() {
         return operando1 + operando2;
     }
 
